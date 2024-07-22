@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { InstagramLogo } from '@phosphor-icons/react'
 
 import { links } from './data'
 
@@ -22,6 +23,14 @@ export default function Menu() {
 					<Link href={link.url}>{link.icon}</Link>
 				</li>
 			))}
+			<li>
+				<Link
+					href="https://www.instagram.com/rumo.recife/"
+					target="__blank"
+				>
+					<InstagramLogo size={32} weight="light" />
+				</Link>
+			</li>
 		</ul>
 	)
 }

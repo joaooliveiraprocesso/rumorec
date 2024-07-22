@@ -1,21 +1,21 @@
-import { Search } from "@/components/Forms/Search"
-
-import Places from "@/components/Places"
-import Hero from "@/components/Hero"
-
+import { Search } from '@/components/Forms/Search'
+import Hero from '@/components/Hero'
+import Places from '@/components/Places'
 
 export default function Home() {
 	return (
 		<main>
-			<div className="flex pt-6 w-full gap-6">
+			<div className="flex w-full gap-6 pt-6">
 				<div className="w-1/2">
 					<Search />
-					
-					<div className="mt-12 pb-6">
-					<h2 className="mb-8 text-4xl font-bold" style={{ color: '#ea580c' }}>
-    Lugares mais visitados
-</h2>
 
+					<div className="pb-6 mt-12">
+						<h2
+							className="mb-8 text-4xl font-bold"
+							style={{ color: '#ea580c' }}
+						>
+							Lugares mais visitados
+						</h2>
 
 						<Places />
 					</div>

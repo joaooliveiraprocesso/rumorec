@@ -44,8 +44,8 @@ export function Search() {
 
   return (
     <Form {...form}>
-        <form 
-            onSubmit={form.handleSubmit(onSubmit)} 
+        <form
+            onSubmit={form.handleSubmit(onSubmit)}
             className="relative mb-6 w-full"
         >
             <FormField
@@ -54,18 +54,18 @@ export function Search() {
                 render={({ field }) => (
                     <FormItem>
                         <FormControl>
-                            <Input 
+                            <Input
                                 placeholder="Encontre seu novo destino"
-                                className="rounded-xl bg-white"  
-                                {...field} 
+                                className="rounded-xl bg-white"
+                                {...field}
                              />
                         </FormControl>
                         <FormMessage />
                     </FormItem>
           )}
         />
-        <Button 
-            type="submit" 
+        <Button
+            type="submit"
             className="absolute right-2 top-1 h-8 w-8 rounded-full text-lg text-gray-400 bg-transparent hover:bg-transparent"
         >
         </Button>

@@ -1,10 +1,10 @@
 import {
-	Buildings,
-	Info,
 	House,
-	
+	Info,
+	MapPinLine,
+	MapTrifold,
+	Path
 } from '@phosphor-icons/react'
-import { Building } from 'lucide-react'
 
 export const links = [
 	{
@@ -13,11 +13,18 @@ export const links = [
 	},
 	{
 		url: '/page1',
-		icon: <Buildings size={32} weight="light" />
+		icon: <MapPinLine size={32} weight="light" />
 	},
 	{
 		url: '/page2',
-		icon: <Info size={32} weight="light" />
+		icon: <Path size={32} weight="light" />
 	},
-	
+	{
+		url: '/page3',
+		icon: <MapTrifold size={32} weight="light" />
+	},
+	{
+		url: '/page4',
+		icon: <Info size={32} weight="light" />
+	}
 ]
